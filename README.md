@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-# sistema_login_hive
 
-A new Flutter project.
 
 ## Getting Started
 
@@ -16,5 +13,4 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 =======
-# login-flutter-sissa
->>>>>>> e1c92f232e2a8a0ce33e7c6ef581a1a84e71a640
+
