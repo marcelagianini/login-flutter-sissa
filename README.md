@@ -1,20 +1,51 @@
-<<<<<<< HEAD
-# sistema_login_hive
+# Aplicativo de Registro e Login com Hive
 
-A new Flutter project.
 
-## Getting Started
+## Protótipo:
 
-This project is a starting point for a Flutter application.
+[![Tela-Login.png](https://i.postimg.cc/ht8D0G5P/Tela-Login.png)](https://postimg.cc/4YdRfXGr)
 
-A few resources to get you started if this is your first Flutter project:
+## Capturas de tela do localhost: 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+[![localhost-51224-i-Phone-14-Pro-Max-1.png](https://i.postimg.cc/Bn7Hcs7y/localhost-51224-i-Phone-14-Pro-Max-1.png)](https://postimg.cc/w1J19Kpc)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-=======
-# login-flutter-sissa
->>>>>>> e1c92f232e2a8a0ce33e7c6ef581a1a84e71a640
+
+
+# Aplicativo de Registro e Login com Hive
+
+Este é um aplicativo simples desenvolvido para permitir que os usuários se registrem e façam login utilizando um nome de usuário e senha. As informações dos usuários são armazenadas localmente no dispositivo usando o **Hive**, uma solução de banco de dados leve e eficiente para Flutter.
+
+## Funcionalidades
+
+- **Tela de Registro:**
+  - Campos para inserir nome de usuário e senha.
+  - Botão para registrar um novo usuário.
+
+- **Tela de Login:**
+  - Campos para inserir nome de usuário e senha.
+  - Botão para fazer login.
+  - Mensagens de sucesso ou erro ao tentar fazer login.
+
+## Tecnologias Utilizadas
+
+- **Flutter**: Framework para desenvolvimento de aplicativos multiplataforma.
+- **Hive**: Banco de dados local para armazenamento das informações do usuário.
+
+## Como Executar o Projeto
+
+1. Clone o repositório:
+   ```bash
+   git clone [https://github.com/marcelagianini/login-flutter-sissa.git]
+
+2. Navegue até o diretório do projeto:
+     ```bash
+    cd sistema_login_hive
+
+3. Instale as dependências:
+     ```bash    
+    flutter pub get
+
+4. Execute o aplicativo:
+     ```bash    
+    flutter run
+
