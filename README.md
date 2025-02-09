@@ -45,7 +45,7 @@ Este é um aplicativo simples desenvolvido para permitir que os usuários se reg
      ```bash    
     flutter pub get
 
-4.Execute o aplicativo:
+4. Execute o aplicativo:
      ```bash    
     flutter run
 
