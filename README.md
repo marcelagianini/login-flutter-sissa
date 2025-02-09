@@ -1,16 +1,48 @@
 
 
-## Getting Started
+Protótipo: 
+[![Tela-Login.png](https://i.postimg.cc/ht8D0G5P/Tela-Login.png)](https://postimg.cc/4YdRfXGr)
 
-This project is a starting point for a Flutter application.
+Capturas de tela do localhost: 
+[![localhost-51224-i-Phone-14-Pro-Max-1.png](https://i.postimg.cc/Bn7Hcs7y/localhost-51224-i-Phone-14-Pro-Max-1.png)](https://postimg.cc/w1J19Kpc)
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-=======
+# Aplicativo de Registro e Login com Hive
+
+Este é um aplicativo simples desenvolvido para permitir que os usuários se registrem e façam login utilizando um nome de usuário e senha. As informações dos usuários são armazenadas localmente no dispositivo usando o **Hive**, uma solução de banco de dados leve e eficiente para Flutter.
+
+## Funcionalidades
+
+- **Tela de Registro:**
+  - Campos para inserir nome de usuário e senha.
+  - Botão para registrar um novo usuário.
+
+- **Tela de Login:**
+  - Campos para inserir nome de usuário e senha.
+  - Botão para fazer login.
+  - Mensagens de sucesso ou erro ao tentar fazer login.
+
+## Tecnologias Utilizadas
+
+- **Flutter**: Framework para desenvolvimento de aplicativos multiplataforma.
+- **Hive**: Banco de dados local para armazenamento das informações do usuário.
+
+## Como Executar o Projeto
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+
+2. Clone o repositório:
+     ```bash
+    cd seu-repositorio
+
+3. Instale as dependências:
+     ```bash    
+    flutter pub get
+
+4.Execute o aplicativo:
+     ```bash    
+    flutter run
 
