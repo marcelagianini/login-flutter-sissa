@@ -35,11 +35,11 @@ Este é um aplicativo simples desenvolvido para permitir que os usuários se reg
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone [https://github.com/marcelagianini/login-flutter-sissa.git]
 
-2. Clone o repositório:
+2. Navegue até o diretório do projeto:
      ```bash
-    cd seu-repositorio
+    cd sistema_login_hive
 
 3. Instale as dependências:
      ```bash    
