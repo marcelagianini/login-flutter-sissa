@@ -30,28 +30,55 @@ class RegistroScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Registro')),
-      backgroundColor: Color(0xFFE1EEF6), // Cor de fundo
+      appBar: AppBar(
+        backgroundColor: Color(0xFFE1EEF6), // Cor de fundo do AppBar
+        elevation: 0, // Remove a sombra do AppBar
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back, color: Colors.black), // Ícone de seta
+          onPressed: () {
+            Navigator.pop(context); // Volta para a tela anterior
+          },
+        ),
+      ),
+      backgroundColor: Color(0xFFE1EEF6), // Cor de fundo da tela
       body: Center(
         child: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              // Imagem no centro
-              Image.asset(
-                'assets/images/LOGO-APPsissa.png',
-                width: 150, // Ajuste o tamanho conforme necessário
-                height: 150,
+              // Imagem no centro com padding na parte inferior
+              Padding(
+                padding: const EdgeInsets.only(bottom: 40.0), // Padding inferior
+                child: Image.asset(
+                  'assets/images/LOGO-APPsissa.png',
+                  width: 250, // Aumentei o tamanho da logo
+                  height: 250,
+                ),
               ),
               SizedBox(height: 20),
+              // Texto "Usuário:" antes do campo de usuário
+              Align(
+                alignment: Alignment.centerLeft,
+                child: Padding(
+                  padding: EdgeInsets.only(left: 40.0), // Alinhamento à esquerda
+                  child: Text(
+                    'Usuário:',
+                    style: TextStyle(
+                      fontSize: 16, // Tamanho da fonte
+                      fontWeight: FontWeight.bold, // Texto em negrito
+                      color: Colors.black, // Cor do texto
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(height: 8), // Espaçamento entre o texto e o campo
               // Campo de usuário
               SizedBox(
-                width: 256,
-                height: 43,
+                width: 300, // Aumentei a largura do campo
+                height: 60, // Aumentei a altura do campo
                 child: TextField(
                   controller: _usernameController,
                   decoration: InputDecoration(
-                    labelText: 'Nome de usuário',
                     filled: true,
                     fillColor: Colors.white,
                     border: OutlineInputBorder(
@@ -60,15 +87,30 @@ class RegistroScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 10),
+              SizedBox(height: 20), // Espaçamento entre os campos
+              // Texto "Senha:" antes do campo de senha
+              Align(
+                alignment: Alignment.centerLeft,
+                child: Padding(
+                  padding: EdgeInsets.only(left: 40.0), // Alinhamento à esquerda
+                  child: Text(
+                    'Senha:',
+                    style: TextStyle(
+                      fontSize: 16, // Tamanho da fonte
+                      fontWeight: FontWeight.bold, // Texto em negrito
+                      color: Colors.black, // Cor do texto
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(height: 8), // Espaçamento entre o texto e o campo
               // Campo de senha
               SizedBox(
-                width: 256,
-                height: 43,
+                width: 300, // Aumentei a largura do campo
+                height: 60, // Aumentei a altura do campo
                 child: TextField(
                   controller: _passwordController,
                   decoration: InputDecoration(
-                    labelText: 'Senha',
                     filled: true,
                     fillColor: Colors.white,
                     border: OutlineInputBorder(
@@ -78,11 +120,11 @@ class RegistroScreen extends StatelessWidget {
                   obscureText: true,
                 ),
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 30), // Espaçamento entre os campos e o botão
               // Botão de registrar
               SizedBox(
-                width: 126,
-                height: 43,
+                width: 200, // Aumentei a largura do botão
+                height: 50, // Aumentei a altura do botão
                 child: ElevatedButton(
                   onPressed: () => _registrar(context),
                   style: ElevatedButton.styleFrom(
@@ -93,7 +135,10 @@ class RegistroScreen extends StatelessWidget {
                   ),
                   child: Text(
                     'Registrar',
-                    style: TextStyle(color: Colors.white), // Cor da fonte
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 18, // Aumentei o tamanho da fonte
+                    ),
                   ),
                 ),
               ),
